@@ -1,0 +1,128 @@
+{
+  "config": {
+    "cmw_ip": "192.168.121.116",
+    "cmw_port": 5025,
+    "signal_standard": "LTE",
+    "band": "3",
+    "bandwidth_mhz": 20,
+    "dl_channel": 1850,
+    "ul_channel": 1950,
+    "output_power_dbm": 23,
+    "aclr_limit_lower_db": -45.0,
+    "aclr_limit_upper_db": -45.0,
+    "sensitivity_target_bler": 1.0,
+    "sensitivity_min_power_dbm": -120.0
+  },
+  "power_results": [
+    {
+      "frequency_mhz": 1842.5,
+      "channel": 1850,
+      "power_dbm": -999.0,
+      "limit_dbm": 20,
+      "passed": false,
+      "timestamp": "2026-03-09T14:33:55.819439"
+    },
+    {
+      "frequency_mhz": 2655.0,
+      "channel": 1850,
+      "power_dbm": -999.0,
+      "limit_dbm": 20,
+      "passed": false,
+      "timestamp": "2026-03-09T14:34:47.907900"
+    },
+    {
+      "frequency_mhz": 806.0,
+      "channel": 1850,
+      "power_dbm": -999.0,
+      "limit_dbm": 20,
+      "passed": false,
+      "timestamp": "2026-03-09T14:35:39.987887"
+    }
+  ],
+  "aclr_results": [
+    {
+      "frequency_mhz": 1842.5,
+      "channel": 1850,
+      "lower_adj_power_dbm": 0.0,
+      "lower_adj_power_dbch": 0.0,
+      "upper_adj_power_dbm": 0.0,
+      "upper_adj_power_dbch": 0.0,
+      "lower_alt1_power_dbm": 0.0,
+      "lower_alt1_power_dbch": 0.0,
+      "upper_alt1_power_dbm": 0.0,
+      "upper_alt1_power_dbch": 0.0,
+      "lower_alt2_power_dbm": 0.0,
+      "lower_alt2_power_dbch": 0.0,
+      "upper_alt2_power_dbm": 0.0,
+      "upper_alt2_power_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": false,
+      "timestamp": "2026-03-09T14:34:07.844502"
+    },
+    {
+      "frequency_mhz": 2655.0,
+      "channel": 1850,
+      "lower_adj_power_dbm": 0.0,
+      "lower_adj_power_dbch": 0.0,
+      "upper_adj_power_dbm": 0.0,
+      "upper_adj_power_dbch": 0.0,
+      "lower_alt1_power_dbm": 0.0,
+      "lower_alt1_power_dbch": 0.0,
+      "upper_alt1_power_dbm": 0.0,
+      "upper_alt1_power_dbch": 0.0,
+      "lower_alt2_power_dbm": 0.0,
+      "lower_alt2_power_dbch": 0.0,
+      "upper_alt2_power_dbm": 0.0,
+      "upper_alt2_power_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": false,
+      "timestamp": "2026-03-09T14:34:59.921697"
+    },
+    {
+      "frequency_mhz": 806.0,
+      "channel": 1850,
+      "lower_adj_power_dbm": 0.0,
+      "lower_adj_power_dbch": 0.0,
+      "upper_adj_power_dbm": 0.0,
+      "upper_adj_power_dbch": 0.0,
+      "lower_alt1_power_dbm": 0.0,
+      "lower_alt1_power_dbch": 0.0,
+      "upper_alt1_power_dbm": 0.0,
+      "upper_alt1_power_dbch": 0.0,
+      "lower_alt2_power_dbm": 0.0,
+      "lower_alt2_power_dbch": 0.0,
+      "upper_alt2_power_dbm": 0.0,
+      "upper_alt2_power_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": false,
+      "timestamp": "2026-03-09T14:35:52.008457"
+    }
+  ],
+  "sensitivity_results": [
+    {
+      "frequency_mhz": 1842.5,
+      "channel": 1850,
+      "sensitivity_power_dbm": -999.0,
+      "bler_percent": 1.0,
+      "passed": true,
+      "timestamp": "2026-03-09T14:34:17.858218"
+    },
+    {
+      "frequency_mhz": 2655.0,
+      "channel": 1850,
+      "sensitivity_power_dbm": -999.0,
+      "bler_percent": 1.0,
+      "passed": true,
+      "timestamp": "2026-03-09T14:35:09.934514"
+    },
+    {
+      "frequency_mhz": 806.0,
+      "channel": 1850,
+      "sensitivity_power_dbm": -999.0,
+      "bler_percent": 1.0,
+      "passed": true,
+      "timestamp": "2026-03-09T14:36:02.022133"
+    }
+  ],
+  "test_time": "2026-03-09T14:33:26.792316"
+}

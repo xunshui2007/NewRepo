@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "work",
+    "createdAt": 1773034402119,
+    "preset": "starter"
+  },
+  "authorizedRoots": [
+    "D:\\work"
+  ]
+}

@@ -1,0 +1,5 @@
+# CMW500自动化测试系统依赖
+# Python 3.8+
+
+pyvisa>=1.13.0
+pyvisa-py>=0.6.0  # 使用纯Python后端，无需安装NI-VISA

@@ -1,0 +1,62 @@
+{
+  "config": {
+    "cmw_ip": "192.168.121.116",
+    "cmw_port": 5025,
+    "band": "3",
+    "bandwidth_mhz": 20,
+    "dl_channel": 1850,
+    "target_power_dbm": 23,
+    "aclr_limit_db": -45.0
+  },
+  "mode": "GPRF",
+  "power_results": [
+    {
+      "band": "3",
+      "frequency_mhz": 1805,
+      "power_dbm": -75.28,
+      "limit_dbm": 20,
+      "passed": false
+    },
+    {
+      "band": "7",
+      "frequency_mhz": 2620,
+      "power_dbm": -75.21,
+      "limit_dbm": 20,
+      "passed": false
+    },
+    {
+      "band": "20",
+      "frequency_mhz": 791,
+      "power_dbm": -75.29,
+      "limit_dbm": 20,
+      "passed": false
+    }
+  ],
+  "aclr_results": [
+    {
+      "band": "3",
+      "frequency_mhz": 1805,
+      "lower_adj_dbch": 0.0,
+      "upper_adj_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": true
+    },
+    {
+      "band": "7",
+      "frequency_mhz": 2620,
+      "lower_adj_dbch": 0.0,
+      "upper_adj_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": true
+    },
+    {
+      "band": "20",
+      "frequency_mhz": 791,
+      "lower_adj_dbch": 0.0,
+      "upper_adj_dbch": 0.0,
+      "limit_db": -45.0,
+      "passed": true
+    }
+  ],
+  "test_time": "2026-03-09T15:02:30.604518"
+}
