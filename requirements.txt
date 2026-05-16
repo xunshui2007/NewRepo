@@ -4,3 +4,4 @@ baostock
 pandas
 numpy
 tqdm
+reportlab

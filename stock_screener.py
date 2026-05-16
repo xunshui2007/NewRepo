@@ -437,17 +437,36 @@ if st.session_state.steps is not None:
             from reportlab.lib.enums import TA_CENTER
             from reportlab.pdfbase import pdfmetrics
             from reportlab.pdfbase.ttfonts import TTFont
-            import io
+            import io, pathlib
 
-            # 注册中文字体（宋体）
-            simsun = r"C:\Windows\Fonts\simsun.ttc"
-            if os.path.exists(simsun):
-                pdfmetrics.registerFont(TTFont("SimSun", simsun))
-                FONT = "SimSun"
-                FONT_BOLD = "SimSun"
-            else:
-                FONT = "Helvetica"
-                FONT_BOLD = "Helvetica-Bold"
+            _script_dir = pathlib.Path(__file__).parent
+
+            def _load_font():
+                candidates = [
+                    _script_dir / "wqy-microhei.ttc",
+                    pathlib.Path(r"C:\Windows\Fonts\simsun.ttc"),
+                    pathlib.Path(r"C:\Windows\Fonts\msyh.ttc"),
+                ]
+                for p in candidates:
+                    if p.exists():
+                        try:
+                            pdfmetrics.registerFont(TTFont("CJK", str(p)))
+                            return "CJK", "CJK"
+                        except Exception:
+                            continue
+                # Download fallback
+                font_path = _script_dir / "wqy-microhei.ttc"
+                if not font_path.exists():
+                    import urllib.request
+                    url = "https://github.com/anthonyfok/fonts-wqy-microhei/raw/master/wqy-microhei.ttc"
+                    urllib.request.urlretrieve(url, font_path)
+                try:
+                    pdfmetrics.registerFont(TTFont("CJK", str(font_path)))
+                    return "CJK", "CJK"
+                except Exception:
+                    return "Helvetica", "Helvetica-Bold"
+
+            FONT, FONT_BOLD = _load_font()
 
             buf = io.BytesIO()
             doc = SimpleDocTemplate(buf, pagesize=A4,
