@@ -216,6 +216,11 @@ def do_screening(spot, max_n, on_progress):
 
         code = str(row["代码"])
         name = row["名称"]
+
+        # 跳过ST股和30开头（创业板）
+        if "ST" in name or "退" in name or code.startswith("30"):
+            continue
+
         price = float(row["最新价"])
         change_pct = float(row["涨跌幅"])
         vol_lots = float(row["成交量"])
